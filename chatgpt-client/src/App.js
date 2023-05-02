@@ -28,7 +28,7 @@ function App() {
   }
 
   function getEngines(){
-    fetch("http://localhost:8000/models")
+    fetch("https://chatgpt-2-0-nine.vercel.app/models")
     .then(res => res.json())
     .then(data => setModels(data.models))
   }
@@ -42,7 +42,7 @@ function App() {
 
     const messages = chatLogNew.map((message) => message.message).join("\n")
     try{
-      const response = await fetch("http://localhost:8000/", {
+      const response = await fetch("https://chatgpt-2-0-nine.vercel.app/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
