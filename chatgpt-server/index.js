@@ -34,8 +34,8 @@ const port = 8000
 app.post('/', async (req, res) => {
     const {message, currentModel} = req.body;
     //console.log(message)
-    console.log("current model is: ", currentModel)
-    console.log("Message is : ",message)
+    // console.log("current model is: ", currentModel)
+    // console.log("Message is : ",message)
     
     try{
       const response = await openai.createCompletion({
@@ -50,6 +50,9 @@ app.post('/', async (req, res) => {
       })
     }catch(err){
       console.log(err.message)
+      res.json({
+        message: "Model not found. Please Try a different Model"
+      })
     }
     
 })

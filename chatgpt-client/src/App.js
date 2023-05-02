@@ -68,6 +68,8 @@ function App() {
             <div className="side-menu-button" onClick={clearChat}>
               <span>＋</span>New Chat
             </div>
+            <p class="model-title">AI Models</p>
+            <i class="model-recommended">text-davinci-003 - recommended</i>
             <div className="models">
               <select onChange={(e) => setCurrentModel(e.target.value)}>
                 {models.map((model, index) => (

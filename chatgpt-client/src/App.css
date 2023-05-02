@@ -31,6 +31,39 @@
   font-size: 20px;
 }
 
+/* .models{
+  padding: 12px;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-align: left;
+  transition: ease 0.25s all;
+} */
+
+.model-title{
+  margin-top:20px;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 20px;
+}
+.models{
+  margin-top:20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  transition: ease 0.25s all;
+} 
+.models select{
+  padding: 12px 2px;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-align: left;
+  transition: ease 0.25s all;
+  background-color: #202123;
+  color:white;
+}
+.model-recommended{
+  color:#0da37f;
+}
+
 /* .chatbox{
   flex: 1;
   background-color: #343541;
@@ -192,7 +225,7 @@ input{
 }
 
 .avatar{
-  background: white;
+  background: radial-gradient(closest-side, #b8da51, #425a5f, #be7237);
   border-radius: 50%;
   width: 40px;
   height: 40px;
